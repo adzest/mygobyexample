@@ -5,9 +5,14 @@
 
 package main
 
-import "fmt"
+import (
+    "fmt"
+    "time"
+    "github.com/adzest/myutils"
+)
 
 func main() {
+    defer myutils.TimeTrack(time.Now(), "23-channels.go")
 
     // Create a new channel with `make(chan val-type)`.
     // Channels are typed by the values they convey.

@@ -25,7 +25,7 @@ func worker(done chan bool) {
 }
 
 func main() {
-        defer myutils.TimeTrack(time.Now(), "25-channels-synchronization.go")
+    defer myutils.TimeTrack(time.Now(), "25-channels-synchronization.go")
 
 
     // Start a worker goroutine, giving it the channel to

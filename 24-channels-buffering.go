@@ -7,9 +7,14 @@
 
 package main
 
-import "fmt"
+import (
+    "fmt"
+    "time"
+    "github.com/adzest/myutils"
+)
 
 func main() {
+    defer myutils.TimeTrack(time.Now(), "24-channels-buffering.go")
 
     // Here we `make` a channel of strings buffering up to
     // 2 values.
