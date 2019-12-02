@@ -1,0 +1,2 @@
+# mygobyexample
+For edu needs.
